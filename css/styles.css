@@ -1,0 +1,219 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --secondary-color: #2196f3;
+}
+
+/* глобальные стили */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+}
+
+body li {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* логотип */
+.logo {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo span,
+.logo-footer span {
+  color: var(--secondary-color);
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/* навигация */
+.navigation a {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.navigation .active {
+  color: var(--secondary-color);
+}
+
+/* телефон и почта */
+.header-contacts a {
+  color: var(--primary-text-color);
+  font-size: 14px;
+}
+
+.footer-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus,
+.footer-contacts a:focus,
+.footer-contacts a:hover {
+  color: var(--secondary-color);
+}
+
+/* стили контента */
+
+/* герой */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero section {
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 11, 34px;
+  border: transparent;
+  margin: 0px;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+
+.hero button:hover,
+.hero button:focus {
+  background-color: #188ce8;
+}
+
+/* наши преимущества */
+.benefits h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* чем мы занимаемся, наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+
+.activity h2,
+.team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* портфолио */
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: -1px;
+}
+
+/* фильтр */
+.filter-button {
+  font-family: inherit;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+/* примеры работ */
+.example-link img {
+  width: 370px;
+}
+.example-link h2 {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-link p {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+}
+
+/* футер */
+footer {
+  background-color: #2f303a;
+}
+
+/* красит логотип в белый */
+footer a {
+  color: #fff;
+}
+
+address {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 2;
+}
