@@ -5,6 +5,13 @@
 }
 
 /* глобальные стили */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
@@ -27,6 +34,25 @@ p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+ul {
+  padding: 0px;
+}
+
+/* ширина контента */
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  outline: solid 1px #212121;
+}
+
+header {
+  border-bottom: solid 1px #ececec;
+  /* padding: 0px; */
+  outline: solid 1px red;
 }
 
 /* логотип */
