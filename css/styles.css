@@ -25,6 +25,10 @@ body a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 button {
   cursor: pointer;
 }
@@ -45,6 +49,11 @@ nav {
   display: flex;
 }
 
+section {
+  padding: 94px 0;
+  /* outline: 1px solid red; */
+}
+
 /* ширина контента */
 .container {
   width: 1230px;
@@ -57,12 +66,10 @@ nav {
 
 header {
   border-bottom: solid 1px #ececec;
-  /* padding: 0px; */
-  /* outline: solid 1px red; */
-  height: 80px;
+  /* height: 80px; */
 }
 
-/* позиционированние шапки */
+/* позиционирование шапки */
 .flex-header,
 .navigation,
 .header-contacts {
@@ -85,17 +92,15 @@ header {
   margin-left: 50px;
 }
 
-.flex-header {
-  /* align-items: center; */
-}
-
 /* логотип */
 .logo {
+  display: inline-block;
   color: #000;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-top: 24px;
 }
 
 .logo span,
@@ -104,19 +109,27 @@ header {
 }
 
 .logo-footer {
+  display: block;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 /* навигация */
 
 .navigation a {
+  display: inline-block;
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.navigation a,
+.header-contacts a {
+  padding: 32px 0;
 }
 
 .navigation a:hover,
@@ -129,6 +142,7 @@ header {
 .header-contacts a {
   color: var(--primary-text-color);
   font-size: 14px;
+  letter-spacing: 0.02em;
 }
 
 .footer-contacts a {
@@ -148,9 +162,8 @@ header {
 /* герой */
 .hero {
   background-color: #2f303a;
-}
-
-.hero section {
+  padding-top: 200px;
+  padding-bottom: 210px;
   text-align: center;
 }
 
@@ -162,6 +175,7 @@ header {
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 40px;
 }
 .hero button {
   display: inline-block;
@@ -187,6 +201,17 @@ header {
 }
 
 /* наши преимущества */
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+.benefits-list > li {
+  width: 270px;
+}
+
 .benefits h3 {
   font-size: 14px;
   font-weight: 700;
@@ -194,15 +219,34 @@ header {
 }
 
 /* чем мы занимаемся, наша команда */
+
+.actions-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team {
   background-color: #f5f4fa;
 }
 
-.activity h2,
-.team h2 {
+.team h2,
+.benefits h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team li {
+  width: 270px;
+  height: 368px;
+  background-color: #fff;
 }
 
 .team h3 {
@@ -210,11 +254,21 @@ header {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team p {
   font-size: 16px;
   line-height: 1.2;
+  margin: 0px;
+}
+
+.team-name {
+  text-align: center;
+}
+
+.team img {
+  padding-bottom: 30px;
 }
 
 /* портфолио */
@@ -265,6 +319,7 @@ header {
 /* футер */
 footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 /* красит логотип в белый */
@@ -276,5 +331,9 @@ address {
   color: #fff;
   font-size: 14px;
   font-style: normal;
-  line-height: 2;
+  margin-bottom: 9px;
+}
+
+.footer-contacts > li:not(:last-child) {
+  margin-bottom: 9px;
 }
