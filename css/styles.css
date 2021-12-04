@@ -4,7 +4,8 @@
   --secondary-color: #2196f3;
 }
 
-/* глобальные стили */
+/* ================  ГЛОБАЛЬНЫЕ СТИЛИ ===================*/
+
 h1,
 h2,
 h3,
@@ -31,6 +32,7 @@ img {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 p {
@@ -38,6 +40,7 @@ p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin: 0px;
 }
 
 ul {
@@ -54,9 +57,10 @@ section {
   /* outline: 1px solid red; */
 }
 
-/* ширина контента */
+/* ===============  ШИРИНА КОНТЕНТА ================ */
+
 .container {
-  width: 1230px;
+  width: 1200px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +73,8 @@ header {
   /* height: 80px; */
 }
 
-/* позиционирование шапки */
+/* =============== ПОЗИЦИОНИРОВАНИЕ ШАПКИ  =============== */
+
 .flex-header,
 .navigation,
 .header-contacts {
@@ -92,7 +97,8 @@ header {
   margin-left: 50px;
 }
 
-/* логотип */
+/* =================  ЛОГОТИП  ================= */
+
 .logo {
   display: inline-block;
   color: #000;
@@ -117,7 +123,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* навигация */
+/* ================ НАВИГАЦИЯ ================= */
 
 .navigation a {
   display: inline-block;
@@ -157,7 +163,7 @@ header {
   color: var(--secondary-color);
 }
 
-/* стили контента */
+/*=========== СТИЛИ КОНТЕНТА  ============ */
 
 /* герой */
 .hero {
@@ -200,7 +206,7 @@ header {
   background-color: #188ce8;
 }
 
-/* наши преимущества */
+/* =============  НАШИ ПРЕИМУЩЕСТВА  ============= */
 
 .benefits-list {
   display: flex;
@@ -216,9 +222,10 @@ header {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
-/* чем мы занимаемся, наша команда */
+/* =============  ЧЕМ МЫ ЗАНИМАЕМСЯ  ============= */
 
 .actions-list {
   display: flex;
@@ -271,7 +278,7 @@ header {
   padding-bottom: 30px;
 }
 
-/* портфолио */
+/*================= ПОРТФОЛИО  ================= */
 
 .hidden {
   width: 1px;
@@ -281,7 +288,7 @@ header {
   margin-top: -1px;
 }
 
-/* фильтр */
+/* ================  ФИЛЬТР  ================= */
 .filter-button {
   font-family: inherit;
   color: var(--primary-text-color);
@@ -289,6 +296,23 @@ header {
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid green; */
+  margin-bottom: 56px;
+}
+
+.filter-list {
+  display: flex;
+}
+
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-button:hover,
@@ -297,7 +321,28 @@ header {
   background-color: var(--secondary-color);
 }
 
-/* примеры работ */
+/* ============  ПРИМЕРЫ РАБОТ  ============ */
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.example-list li {
+  width: 370px;
+  margin-right: 30px;
+  border: solid 1px #eeeeee;
+  margin-bottom: 30px;
+}
+
+.example-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.example-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
 .example-link img {
   width: 370px;
 }
@@ -305,18 +350,25 @@ header {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 
 .example-link p {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.8;
   letter-spacing: 0.06em;
 }
 
-/* футер */
+.example-description {
+  padding: 20px 24px;
+}
+
+.work-category > p {
+  margin: 0px;
+}
+
+/* ==============  ФУТЕР  ============ */
 footer {
   background-color: #2f303a;
   padding: 60px 0;
